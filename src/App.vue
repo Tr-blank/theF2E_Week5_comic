@@ -1,26 +1,86 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <header>Comicomic</header>
+    <main>
+      <div class="page">
+        <h1>My Hexschool</h1>
+        <select name="" id=""><option value="">Chapter 1</option></select>
+        <select name="" id=""><option value="">Page 09</option></select>
+      </div>
+      <picture>
+        <img src="img/storyboard-1.png" alt="">
+      </picture>
+      <section>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        <div>
+          <img src="img/storyboard-1.png" alt="">
+        </div>
+        
+      </section>
+    </main>
   </div>
 </template>
 
 <style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
+@import 'stylus/normalize'
+@import '../stylus/basic'
+body
+  background-color #f2f2f2
+header 
+  background-color #000
+  font-size 36px
+  color #50FF44
+  line-height 74px
+  text-align  center
+main
+  max-width 620px
+  margin  0 auto
+.page
+  display flex
+  padding 20px 0
+h1
+  font-size 20px
+  font-weight: bold;
+  padding-right: 10px;
+select
+  border: 2px solid #000;
+  padding: 4px;
+  &:nth-child(2)
+    border-right 0
 
-#nav
-  padding 30px
-  a
-    font-weight bold
-    color #2c3e50
-    &.router-link-exact-active
-      color #42b983
+section
+  display table
+  overflow auto
+  div
+    display table-cell
+    width 20%
+    background-color #000000
+    img
+      opacity .9
 </style>
